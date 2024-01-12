@@ -1,0 +1,329 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #272727;
+}
+
+p {
+    color: rgba(39, 39, 39, 0.60);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.center_align {
+    text-align: center;
+}
+.red_color_text{
+    color: #E55473;
+}
+
+.banner_container,
+.support {
+    margin-bottom: 100px;
+}
+
+/* Banner Styles */
+.banner_container {
+    background: rgba(229, 84, 115, 0.10);
+}
+
+.banner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.banner_content h2 {
+    color: #272727;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.banner_content p {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 22.5px;
+    margin-bottom: 20px;
+}
+
+.banner_content button {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background: #E55473;
+    border-radius: 6px;
+    border: none;
+}
+
+
+/* Featured Flower Styles */
+.featured_flower {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.featured_flower .description {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.featured_flower .description h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.featured_flower .description p {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 22.5px;
+    margin-bottom: 20px;
+}
+
+.featured_flower .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.featured_flower .image div:nth-child(1) {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.featured_flower .image div:nth-child(2) {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.featured_flower .image div:nth-child(3) {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(71, 125, 17, 0.15);
+}
+
+
+/* Support styles */
+.support {
+    width: 80%;
+    margin: 100px auto;
+    padding: 65.5px 131px;
+    display: flex;
+    background: rgba(39, 39, 39, 0.05);
+    box-sizing: border-box;
+}
+
+.support div {
+    flex: 1;
+}
+
+.support div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.support div img {
+    height: 66px;
+    width: 66px;
+}
+
+
+/* discount banner styles */
+.discount_container {
+    background: rgba(229, 84, 115, 0.10);
+}
+
+.discount {
+    width: 60%;
+    margin: 40px auto;
+    /*Why margin isn't applicable here */
+    padding: 60px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.discount_content {
+    width: 50%;
+}
+
+.discount_content h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.discount_content p {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 22.5px;
+    /* 166.667% */
+    margin-bottom: 20px;
+}
+
+.discount_image {
+    width: 30%;
+}
+
+.discount_content button {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background: #E55473;
+    border-radius: 6px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Instagram Styles */
+.instagram_container {
+    width: 80%;
+    margin: 100px auto;
+
+}
+
+.instagram_container .description {
+    width: 37.5%;
+    margin: 0 auto;
+}
+
+.instagram_container .description h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.instagram_container .description p {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 13.5px;
+    margin-bottom: 20px;
+}
+
+.instagram_image {
+    display: flex;
+    gap: 10px;
+}
+
+.instagram_image div {
+    flex: 1;
+}
+
+.instagram_image div:hover {
+    /*picture is shaking */
+    border: 2px solid purple;
+    /* box-sizing: border-box; */
+}
+
+
+
+/* Get details styles */
+.get_details {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+    background-image: url('../Images/Rectangle\ 9.png');
+
+}
+
+.get_details_description h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.get_details_description p {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 13.5px;
+    margin-bottom: 20px;
+}
+
+.email_container {
+    width: 50%;
+    margin: 50px auto 0 auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email_field {
+    width: 80%;
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.subscribe_field {
+    width: 18%;
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 13.5px;
+    font-weight: 700;
+    border-radius: 5px;
+background: #E55473;
+}
+
+
+/* Footer styles */
+.footer_container{
+    background-color: #111010;
+    padding: 96px 0;
+    margin-top: 100px;
+}
+.footer_description{
+    width: 30%;
+    margin: 0 auto; /*margin isn't taking from .footer_container*/
+}
+.footer_container h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+.footer_container p{
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 13.5px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.90);
+}
+.footer_description .copyright_info{
+    color: rgba(255, 255, 255, 0.40);
+}
