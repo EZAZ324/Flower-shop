@@ -105,24 +105,31 @@ img {
 
 .featured_flower .image {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 500px;
+    gap: 20px;
+    /* align-items: center;
+    justify-content: space-between; */
+    /* height: 500px; */
+}
+.featured_flower .image div{
+    flex: 1;
 }
 
 .featured_flower .image div:nth-child(1) {
     border-radius: 300px 300px 0px 0px;
     background: rgba(167, 33, 98, 0.15);
+    padding: 50px 50px 0 50px;
 }
 
 .featured_flower .image div:nth-child(2) {
     border-radius: 300px 300px 0px 0px;
     background: rgba(5, 151, 160, 0.15);
+    padding: 50px 50px 0 50px;
 }
 
 .featured_flower .image div:nth-child(3) {
     border-radius: 300px 300px 0px 0px;
     background: rgba(71, 125, 17, 0.15);
+    padding: 50px 50px 0 50px;
 }
 
 
@@ -326,4 +333,65 @@ background: #E55473;
 }
 .footer_description .copyright_info{
     color: rgba(255, 255, 255, 0.40);
+}
+
+
+
+/* For smaller devices */
+@media screen and (max-width: 576px) {
+    .banner{
+        width: auto;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    .banner_content h2{
+        font-size: 30px;
+    }
+    .featured_flower .image{
+        flex-direction: column;
+    }
+    .support{
+        width: 80%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .support div figure{
+        margin-top: 30px;
+    }
+    .discount{
+        width: auto;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+    .discount_content{
+        width: 100%;
+    }
+    .discount_image{
+       display: none;
+    }
+    .instagram_container .description{
+        width: 80%;
+    }
+    .instagram_image{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .instagram_image div{
+        width: 100%;
+    }
+    .email_container{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe_field{
+        width: 40%;
+    }
+    .footer_container{
+        padding: 40px 0;
+    }
+    .footer_description{
+        width: 70%;
+    }
+    
 }
