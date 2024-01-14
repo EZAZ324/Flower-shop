@@ -28,7 +28,8 @@ img {
 .center_align {
     text-align: center;
 }
-.red_color_text{
+
+.red_color_text {
     color: #E55473;
 }
 
@@ -110,7 +111,8 @@ img {
     justify-content: space-between; */
     /* height: 500px; */
 }
-.featured_flower .image div{
+
+.featured_flower .image div {
     flex: 1;
 }
 
@@ -191,7 +193,6 @@ img {
     font-size: 13.5px;
     font-weight: 400;
     line-height: 22.5px;
-    /* 166.667% */
     margin-bottom: 20px;
 }
 
@@ -304,34 +305,40 @@ img {
     font-size: 13.5px;
     font-weight: 700;
     border-radius: 5px;
-background: #E55473;
+    background: #E55473;
 }
 
 
 /* Footer styles */
-.footer_container{
+.footer_container {
     background-color: #111010;
-    padding: 96px 0;
+    /* padding: 1px; */
+    /* border: 1px solid gray; */
+    display: flow-root;  /*To avoid margin collapsing*/
     margin-top: 100px;
 }
-.footer_description{
+
+.footer_description {
     width: 30%;
-    margin: 0 auto; /*margin isn't taking from .footer_container*/
+    margin: 96px auto;   /*margin isn't taking from .footer_container */
 }
-.footer_container h2{
+
+.footer_container h2 {
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 20px;
     color: #FFF;
 }
-.footer_container p{
+
+.footer_container p {
     font-size: 13.5px;
     font-weight: 400;
     line-height: 13.5px;
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.90);
 }
-.footer_description .copyright_info{
+
+.footer_description .copyright_info {
     color: rgba(255, 255, 255, 0.40);
 }
 
@@ -339,59 +346,73 @@ background: #E55473;
 
 /* For smaller devices */
 @media screen and (max-width: 576px) {
-    .banner{
+    .banner {
         width: auto;
         padding: 10px;
         flex-direction: column-reverse;
     }
-    .banner_content h2{
+
+    .banner_content h2 {
         font-size: 30px;
     }
-    .featured_flower .image{
+
+    .featured_flower .image {
         flex-direction: column;
     }
-    .support{
+
+    .support {
         width: 80%;
         flex-direction: column;
         padding: 10px;
     }
-    .support div figure{
+
+    .support div figure {
         margin-top: 30px;
     }
-    .discount{
+
+    .discount {
         width: auto;
         flex-direction: column;
         padding: 30px 10px;
     }
-    .discount_content{
+
+    .discount_content {
         width: 100%;
     }
-    .discount_image{
-       display: none;
+
+    .discount_image {
+        display: none;
     }
-    .instagram_container .description{
+
+    .instagram_container .description {
         width: 80%;
     }
-    .instagram_image{
+
+    .instagram_image {
         display: grid;
         grid-template-columns: auto auto;
     }
-    .instagram_image div{
+
+    .instagram_image div {
         width: 100%;
     }
-    .email_container{
+
+    .email_container {
         width: 80%;
         flex-direction: column;
         align-items: center;
     }
-    .subscribe_field{
+
+    .subscribe_field {
         width: 40%;
     }
-    .footer_container{
+
+    .footer_container {
         padding: 40px 0;
     }
-    .footer_description{
+
+    .footer_description {
         width: 70%;
     }
-    
+
 }
